@@ -1,0 +1,19 @@
+label{
+	background-color: inherit;
+	padding: .5rem .75rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 1em;
+	color: gray;
+	transition: all .1s ease-out;
+}
+
+.input-active{
+	background-color: white;
+	padding: 0 .25rem;
+	top: -.75rem;
+	left: .5rem;
+	font-size: .8em;
+	z-index: 11;
+}

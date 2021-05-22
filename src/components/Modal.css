@@ -1,0 +1,43 @@
+#modal{
+	perspective: 1000px;
+}
+
+.fade-enter {
+	opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+	opacity: .7;
+	transition: all .2s ease-out;
+}
+
+.fade-leave {
+	opacity: .7;
+}
+
+.fade-leave.fade-leave-active {
+	opacity: 0;
+	transition: all .2s ease-out;
+}
+
+.spin-enter{
+	opacity: 0;
+	transform: scale(.7) translate3d(0, 200px, -50px) rotateY(-90deg) rotateZ(60deg);
+}
+
+.spin-enter.spin-enter-active{
+	opacity: 1;
+	transform: scale(1) translate3d(0, 0, 0) rotateY(0) rotateZ(0);
+	transition: all .2s ease-out;
+}
+
+.spin-leave {
+	opacity: 1;
+	transform: scale(1) translate3d(0, 0, 0) rotateY(0) rotateZ(0);
+}
+
+.spin-leave.spin-leave-active {
+	opacity: 0;
+	transform: scale(.7) translate3d(0, 200px, -50px) rotateY(-90deg) rotateZ(60deg);
+	transition: all .2s ease-out;
+}
